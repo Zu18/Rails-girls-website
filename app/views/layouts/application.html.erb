@@ -10,6 +10,7 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <script src="https://kit.fontawesome.com/42a88c3c06.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -22,13 +23,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link <%= 'active' if current_page?(controller: 'pages', action: 'homepage') %>" href="/">Home</a>
+              <a class="nav-link <%= 'active' if current_page?(controller: 'pages', action: 'homepage') %>" href="/"><i class="fa-solid fa-house-chimney" style="color: #ffffff;"></i> Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link <%= 'active' if current_page?(controller: 'ideas') %>" href="/ideas">Ideas</a>
+              <a class="nav-link <%= 'active' if current_page?(controller: 'ideas') %>" href="/ideas"><i class="fa-solid fa-lightbulb" style="color: #ffffff;"></i> Ideas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link <%= 'active' if current_page?(controller: 'pages', action: 'about') %>" href="/pages/about">About</a>
+              <a class="nav-link <%= 'active' if current_page?(controller: 'pages', action: 'about') %>" href="/pages/about"><i class="fa-solid fa-question" style="color: #ffffff;"></i> About</a>
             </li>
           </ul>
         </div>

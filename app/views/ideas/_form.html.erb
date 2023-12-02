@@ -23,10 +23,10 @@
 
   <div>
     <%= form.label :picture, style: "display: block" %>
-    <%= form.file_field :picture %>
+    <%= form.file_field :picture, class: "mt-2" %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="mt-3">
+    <%= form.submit "Create idea", class: "btn btn-success" %>
   </div>
 <% end %>
